@@ -1,0 +1,21 @@
+# parameters.yaml
+
+# Kraken trading pairs
+kraken:
+  pairs:
+    - "USDC/USD"
+    - "USDC/CAD"
+    # - "USD/CAD"  # Uncomment if needed
+
+# Deribit trading settings
+deribit:
+  currencies:
+    - BTC
+  kinds:
+    - spot
+    - future
+  gamma: 0.000900 # Risk aversion parameter
+  kappa: 2.5  # Inventory penalty parameter
+  T: 0.16  # Time horizon
+  sma_period: 16  # SMA period for volatility calculations
+  risk_aversion: 0.020
